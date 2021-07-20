@@ -43,8 +43,8 @@ class _InputPageState extends State<InputPage> {
                     );
                   },
                   colour: selectedGender == Gender.male
-                      ? kActiveCardColor
-                      : kInactiveCardColor,
+                      ? kInactiveCardColor
+                      : kActiveCardColor,
                   cardChild:
                       IconContent(label: 'MALE', icon: FontAwesomeIcons.mars),
                 ),
@@ -57,8 +57,8 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   colour: selectedGender == Gender.female
-                      ? kActiveCardColor
-                      : kInactiveCardColor,
+                      ? kInactiveCardColor
+                      : kActiveCardColor,
                   cardChild: IconContent(
                       label: 'FEMALE', icon: FontAwesomeIcons.venus),
                 ),
@@ -94,8 +94,10 @@ class _InputPageState extends State<InputPage> {
                     data: SliderTheme.of(context).copyWith(
                       inactiveTrackColor: Color(0xFF8D8E98),
                       activeTrackColor: Colors.white,
-                      thumbColor: Color(0xFFEB1555),
-                      overlayColor: Color(0x29EB1555),
+                      //thumbColor: Color(0xFFEB1555),
+                      thumbColor: Colors.orangeAccent,
+                      //overlayColor: Color(0x29EB1555),
+                      overlayColor: Colors.orange,
                       thumbShape:
                           RoundSliderThumbShape(enabledThumbRadius: 10.0),
                       overlayShape:
